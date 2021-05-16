@@ -38,10 +38,10 @@ function draw() {
   background(46,139,87);
   foodObj.display();
 
- // fedTime = databse.ref('FeedTime');
-  //fedTime.on("value",function(data){
- // lastFed = data.val();
- // })
+ fedTime = databse.ref('FeedTime');
+  fedTime.on("value",function(data){
+  lastFed = data.val();
+  })
   
   
  
